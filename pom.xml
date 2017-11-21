@@ -74,8 +74,7 @@
                 <artifactId>appengine-maven-plugin</artifactId>
                 <version>${appengine.maven.plugin.version}</version>
                 <configuration>
-                    <!-- <devserver.port>3535</devserver.port>
-                      deploy configuration -->
+                    <devserver.port>4242</devserver.port>
                 </configuration>
             </plugin>
             <plugin>
