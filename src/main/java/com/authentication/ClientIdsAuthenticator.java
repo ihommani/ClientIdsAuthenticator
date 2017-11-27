@@ -84,7 +84,7 @@ public class ClientIdsAuthenticator extends EndpointsAuthenticator {
         GoogleAuth.TokenInfo tokenInfo = generateTokenInfo(authToken);
         if (tokenInfo == null)
             return null;
-        return Strings.isWhitelisted(tokenInfo.clientId, clientIdsSupplier.get()) ? null : user;
+        return Strings.isWhitelisted(tokenInfo.clientId, clientIdsSupplier.get()) ? user : null;
     }
 
     @Nullable
