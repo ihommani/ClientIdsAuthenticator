@@ -11,6 +11,7 @@ import com.google.api.server.spi.response.UnauthorizedException;
         name = "helloworld",
         version = "v1",
         // ClientIds whitelisting algorithm is defined in the below authenticator
+        clientIds = "*", // we basically say, accept any token's origin, we take care of it into our Authenticator
         authenticators = ClientIdsAuthenticator.class
 
 )
